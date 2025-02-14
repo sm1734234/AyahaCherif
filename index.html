@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plateforme de Gestion Financière</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>Finance-Pro <i class="fas fa-coins"></i></h1>
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#apropos">À Propos</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contactez-nous</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Section Accueil -->
+    <section id="accueil" class="hero">
+        <video autoplay muted loop id="video-bg">
+            <source src="finance-video.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas la vidéo.
+        </video>
+        <div class="hero-content">
+            <h2>Gérez Vos Finances en Toute Simplicité</h2>
+            <p>FinancePro vous offre des outils puissants pour optimiser votre budget, vos investissements et votre planification financière.</p>
+            <a href="#services" class="btn">Découvrir nos Services</a>
+        </div>
+    </section>
+
+    <!-- Section À Propos -->
+   <section id="apropos" class="about">
+    <h2>À Propos de Finance-Pro</h2>
+    <div class="about-content">
+        <img src="images/Ayaha1.png" alt="Photo de Cherif Ayaha">
+        <div class="about-text">
+            <p>
+                <strong>Finance-Pro</strong> est une plateforme innovante dédiée à la gestion financière. 
+                Fondée en 2024 par <strong>Roumar Ayaha Sidi</strong> & <strong>Omar Saleh Abdallah</strong>, notre mission est d'aider les particuliers et les entreprises 
+                à prendre le contrôle de leurs finances grâce à des solutions simples et efficaces.
+            </p>
+            <p>
+                Notre équipe d'experts vous guide à chaque étape, que ce soit pour la <strong>gestion de budget</strong>, 
+                <strong>l'investissement</strong> ou encore la <strong>planification financière à long terme</strong>.
+            </p>
+        </div>
+    </div>
+</section>
+    <!-- Section Services -->
+    <section id="services" class="services">
+        <h2>Nos Services</h2>
+        <div class="service-container">
+            <div class="service-item">
+                <img src="images/budjet1.png" alt="Gestion de Budget">
+                <!-- <i class="fas fa-chart-line"></i> -->
+                <h3>Gestion de Budget</h3>
+                <p>Suivez vos dépenses, créez des budgets personnalisés et atteignez vos objectifs financiers.</p>
+            </div>
+            <div class="service-item">
+                <img src="images/budjet2.png" alt="Investissement">
+                <!-- <i class="fas fa-coins"></i> -->
+                <h3>Investissement</h3>
+                <p>Accédez à des conseils d'investissement pour maximiser vos rendements et diversifier votre portefeuille.</p>
+            </div>
+            <div class="service-item">
+                <img src="images/budjet3.png" alt="Épargne et Retraite">
+                <!-- <i class="fas fa-piggy-bank"></i> -->
+                <h3>Épargne et Retraite</h3>
+                <p>Planifiez votre épargne et préparez votre retraite avec des stratégies adaptées à vos besoins.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="contact">
+        <h2>Contactez-nous</h2>
+          <p>Vous avez des questions ou besoin d'assistance ? Notre équipe est à votre disposition.</p>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn">Envoyer</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>FinancePro</h3>
+                <p>Votre partenaire en gestion financière.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Liens Utiles</h3>
+                <ul>
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#apropos">À Propos</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email : contact@financepro.com</p>
+                <p>Téléphone : +33 1 23 45 67 89</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 FinancePro. Tous droits réservés.</p>
+        </div>
+    </footer>
+    <script>
+        window.addEventListener("scroll", function() {
+            const header = document.querySelector("header");
+            header.classList.toggle("scrolled", window.scrollY > 50);
+        });
+        
+    </script>    
+</body>
+</html>
